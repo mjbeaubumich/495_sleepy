@@ -16,7 +16,7 @@ face = cv2.CascadeClassifier(os.path.join(root_path,'haar cascade files', 'haarc
 leye = cv2.CascadeClassifier(os.path.join(root_path, 'haar cascade files', 'haarcascade_lefteye_2splits.xml'))
 reye = cv2.CascadeClassifier(os.path.join(root_path, 'haar cascade files', 'haarcascade_righteye_2splits.xml'))
 
-client = Client('ACc6fc575fedbb1b800b0833ce15ba456e', 'ae60557a84e5243ebd9cdeede49691bf')
+#client = Client('ACc6fc575fedbb1b800b0833ce15ba456e', 'ae60557a84e5243ebd9cdeede49691bf')
 
 lbl=['Close','Open']
 
@@ -138,7 +138,7 @@ while(True):
     if (score > 30):
         if (not asleep_prev_loop):
             asleep_prev_loop = True
-            client.messages.create(to='+17347907349', from_='+18782177085', body='Your son Frankie has fallen asleep.\n\nSafe landing the vehicle.')
+            #client.messages.create(to='+17347907349', from_='+18782177085', body='Your son Frankie has fallen asleep.\n\nSafe landing the vehicle.')
         cv2.putText(frame,'INITIATING SAFE LAND NOW. TEXTING YOUR MOM',(10,height-100), font, 1,(0,0,0),1,cv2.LINE_AA)
     if (score < 15 and asleep_prev_loop):
         asleep_prev_loop = False
