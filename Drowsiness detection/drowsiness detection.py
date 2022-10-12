@@ -16,7 +16,7 @@ face = cv2.CascadeClassifier(os.path.join(root_path,'haar cascade files', 'haarc
 leye = cv2.CascadeClassifier(os.path.join(root_path, 'haar cascade files', 'haarcascade_lefteye_2splits.xml'))
 reye = cv2.CascadeClassifier(os.path.join(root_path, 'haar cascade files', 'haarcascade_righteye_2splits.xml'))
 
-client = Client('ACc6fc575fedbb1b800b0833ce15ba456e', 'e5d4993b619e569b8904cceef6994602')
+client = Client('ACc6fc575fedbb1b800b0833ce15ba456e', 'ae60557a84e5243ebd9cdeede49691bf')
 
 lbl=['Close','Open']
 
